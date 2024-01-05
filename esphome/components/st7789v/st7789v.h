@@ -107,12 +107,21 @@ static const uint8_t ST7789_MADCTL_GS = 0x01;
 
 static const uint8_t ST7789_MADCTL_COLOR_ORDER = ST7789_MADCTL_BGR;
 
+<<<<<<< .mine
 class ST7789V;
 
 using st7789_writer_t = std::function<void(ST7789V &)>;
 
 class ST7789V : public PollingComponent,
                 public display::DisplayBuffer,
+=======
+class ST7789V : public display::DisplayBuffer,
+
+
+
+
+
+>>>>>>> .theirs
                 public spi::SPIDevice<spi::BIT_ORDER_MSB_FIRST, spi::CLOCK_POLARITY_LOW, spi::CLOCK_PHASE_LEADING,
                                       spi::DATA_RATE_20MHZ> {
  public:
