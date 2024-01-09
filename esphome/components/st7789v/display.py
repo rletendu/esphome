@@ -18,6 +18,8 @@ from esphome.const import (
 from . import st7789v_ns
 
 CONF_EIGHTBITCOLOR = "eightbitcolor"
+CONF_OFFSET_HEIGHT = "offset_height"
+CONF_OFFSET_WIDTH = "offset_width"
 CONF_NO_DISP_BUFFER = "no_disp_buffer"
 
 CODEOWNERS = ["@kbx81"]
